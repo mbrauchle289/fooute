@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../stylesheet/contact.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>Kontakt</h1>
+    </div>
+    <div id="main">
+        <form action="../script/contact.php" method="POST">
+            <p class="contact"><label for="name">Name</label><input type="text" id="name" required></p>
+            <p class="contact"><label for="firma">Firma</label><input type="text" id="firma"></p>
+            <p class="contact"><label for="telefon">Telefon</label><input type="tel" id="telefon" required></p>
+            <p class="contact"><label for="mail">Email</label><input type="email" id="mail" required></p>
+            <p class="contact"><label for="nachricht">Nachricht</label><textarea required name="nachricht"
+                    id="nachricht" cols="30" rows="10"></textarea></p>
+            <p class="contact"><label for="submit"></label> <input id="submit" type="submit" value="absenden"></p>
+        </form>
+        <div id="contact-wrapper">
+            <div id="social-media">
+                <h1>Social Media</h1>
+                <img class="twitter-footer" src="../images/twitter.svg" width="25vh" height="25vh"
+                    alt="bild wurde nicht geladen">
+                <img class="facebook-footer" src="../images/facebook (1).svg" width="25vh" height="25vh"
+                    alt="bild wurde nicht geladen">
+                <img class="instagram-footer" src="../images/instagram (1).svg" width="25vh" height="25vh"
+                    alt="bild wurde nicht geladen">
+            </div>
+            <div id="contact-list">
+                <h1>Ihr Anprechpartner</h1>
+                <p>Patrick Hirt</p>
+                <p>Baerenfelsstraße 15</p>
+                <p>79379 Müllheim</p>
+                <p>Tel. 0176 76882368</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-text">
+            <a>&copy; 2021 fooute.de</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+        <div id="footer-images">
+            <img class="twitter-footer" src="../images/twitter.svg" width="15vh" height="15vh"
+                alt="bild wurde nicht geladen">
+            <img class="facebook-footer" src="../images/facebook (1).svg" width="15vh" height="15vh"
+                alt="bild wurde nicht geladen">
+            <img class="instagram-footer" src="../images/instagram (1).svg" width="15vh" height="15vh"
+                alt="bild wurde nicht geladen">
+        </div>
+    </div>
+</body>
+
+</html>

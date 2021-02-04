@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <title>Snack Pass</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var text = $(".text");
+
+            text.mouseover(function (e) {
+                text.removeClass("hidden");
+                document.querySelector(".visible").style.color = "black";
+            });
+            text.mouseout(function (e) {
+                text.addClass("hidden");
+                document.querySelector(".visible").style.color = "white";
+
+            });
+        });
+
+    </script>
+</head>
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a id="logo" class="nav-link" href="#">fooute.</a></li>
+            <li><a class="nav-link" href="contact.html">Kontakt</a></li>
+            <li><a class="nav-link" href="#about-us-wrapper">Über fooute.</a></li>
+            <li><a class="nav-link" href="#team-wrapper">Unser Team</a></li>
+
+        </ul>
+    </nav>
+    <div id="navimages">
+        <img class="twitter-header" src="../images/twitter.svg" width="3%" height="3%" alt="bild wurde nicht geladen">
+
+        <img class="facebook-header" src="../images/facebook (1).svg" width="3%" height="3%"
+            alt="bild wurde nicht geladen">
+        <img class="instagram-header" src="../images/instagram (1).svg" width="3%" height="3%"
+            alt="bild wurde nicht geladen">
+    </div>
+</header>
+
+<body>
+    <div>
+        <ul class="text hidden">
+            <li>foo</li>
+            <li class="ghost">d</li>
+            <li class="ghost">R</li>
+            <li class="ghost">o</li>
+            <li class="color">u</li>
+            <li class="color">t</li>
+            <li class="color">e</li>
+            <li class="visible">.</li>
+        </ul>
+    </div>
+    <div id="textwrapper">
+        <p id="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore. </p>
+    </div>
+    <div id="about-us-wrapper">
+        <div id="about-us-image"></div>
+        <div id="about-us-section">
+            <p id="story">STORY 01</p>
+            <h1 id="about-us-title">Über fooute.</h1>
+            <p id="about-us-subtitle">Bestelle mit fooute und spare dir das Warten.</p>
+            <p id="about-us-text">Lust auf einen Cappucchino aus deinem Lieblingscafé, aber du hast keine Zeit wieder
+                mal in der Viel zu langen Schlange zu warten? Kein Problem, denn mit fooute kannst du einfach und bequem
+                deine Bestellung ohne unnötige Wartezeiten abholen und genießen. Mit einem Blick auf die Karte bekommst
+                du einen Überblick über alle Restaurants in deiner Nähe. Wähle in nur wenigen Schritten dein
+                Lieblingscafé aus und klicke auf das Produkt deiner Wahl. Bezahle einfach und sicher online oder bar und
+                lasse dir den kürzesten Weg zu deinem Abholort anzeigen. Vergeude keine Zeit mehr und lade dir jetzt
+                fooute herunter. </p>
+        </div>
+    </div>
+    <div id="team-wrapper">
+        <div id="team-text">
+            <h1>Unser Team</h1>
+            <div id=team-paragraph>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    uienply
+                    iste.
+                </p>
+            </div>
+        </div>
+        <div id="team-cards">
+            <div id="cardone">
+                <div id="card1"></div>
+                <div id="card2">
+                    <h4>Mitglied gesucht</h4>
+                    <p>Willkommen im Team</p>
+                </div>
+            </div>
+            <div id="cardtwo">
+                <div id="card3"></div>
+                <div id="card4">
+                    <h4>Patrick Hirt</h4>
+                    <p>CEO & Gründer</p>
+                </div>
+            </div>
+            <div id="cardthree">
+                <div id="card5"></div>
+                <div id="card6">
+                    <h4>Maximilian B</h4>
+                    <p>CTO & Gründer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app-wrapper">
+        <div id="mobile-image"><img src="../images/mobile.png" alt="bild wurde nicht geladen" height="350vh"></div>
+        <div id="app-section">
+            <h1>Gib Warten keine Chance. Jetzt herunterladen!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero
+                labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <img id="google" src="../images/apple.png" width="100vh" height="100vh" alt="bild wurde nicht geladen">
+            <img id="apple" src="../images/google.png" width="100vh" height="100vh" alt="bild wurde nicht geladen">
+        </div>
+        <div id="footer">
+            <div id="footer-text">
+                <a>&copy; 2021 fooute.de</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <div id="footer-images">
+                <img class="twitter-footer" src="../images/twitter.svg" width="15vh" height="15vh"
+                    alt="bild wurde nicht geladen">
+                <img class="facebook-footer" src="../images/facebook (1).svg" width="15vh" height="15vh"
+                    alt="bild wurde nicht geladen">
+                <img class="instagram-footer" src="../images/instagram (1).svg" width="15vh" height="15vh"
+                    alt="bild wurde nicht geladen">
+            </div>
+        </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

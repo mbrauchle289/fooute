@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+body{
+display: grid;
+background-color: #393E46;
+grid-template-columns: 1fr;
+grid-template-rows: 5fr 15fr 1fr;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+}
+#header{
+grid-area: header;
+background-color: black;
+background-image: url(../images/impressum2.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+"."
+"title";
+}
+#header h1{
+grid-area: title;
+color: white;
+font-family: "Roboto";
+font-size: 50px;
+padding-left: 3vh;
+}
+
+#title{
+    margin-top: 3%;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-template-rows:1/3fr 1/3fr 1/3fr ;
+    grid-template-areas: 
+    ". ."
+    "content  wrapper"
+    ". .";  
+} 
+form{
+    grid-area: content;
+    padding-left: 3ch;
+}
+p{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label{
+    font-family: "Roboto";
+    margin-right: 2vh;
+    justify-self: right;
+    color: white;
+}
+input{
+    width: 80vh;
+    height: 4vh;
+    background-color: white;
+    border: none;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+textarea{
+    width: 80vh;
+    height: 20vh;
+    background-color: white;
+    border: none;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#submit{
+   width: 12vh;
+   justify-self: flex-end;
+   height: 4vh;
+   background-color:#245A5D;
+   border-radius: 3px;
+   border: 0;
+   color: white;
+   font-family: "Roboto";
+   cursor: pointer;
+   justify-content: space-around;
+   font-size: 2vh;
+}
+#contact-wrapper{
+grid-area: wrapper;
+
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#contact-list{
+    margin-top: 5vh;
+color: white;
+font-family: "Roboto";
+text-align: left;
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+}
+
+#contact-list p{
+    text-align: left;
+    display: block;
+    
+
+}
+#social-media{
+color: white;
+font-family: "Roboto";
+text-align: left;
+}
+#social-media img{
+    margin-right: 2vh;
+    cursor: pointer;
+    transition: .5s ease;
+}
+#social-media img:hover{
+    transform: scale(1.1);
+}
+#footer{
+    grid-area: footer;
+    background-color:#245A5D;
+    display: grid;
+    grid-template-columns: 1fr 100fr 50fr 14fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . . . "
+    ". footer-text . footer-images ."
+    ". . . . . "
+    ;
+}
+#footer-images{
+grid-area: footer-images;
+}
+#footer-images img{
+    margin-left: 15%;
+    cursor: pointer;
+}
+#footer-text{
+grid-area: footer-text;
+color: white;
+}
+#footer-text a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right:5%; 
+}

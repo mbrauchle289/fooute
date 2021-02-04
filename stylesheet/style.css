@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+html{
+scroll-behavior: smooth;
+height: 100%;
+}
+header{
+    margin-top: 0;
+    height: 8%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: background-color 300ms linear;
+}
+#navimages,#user{
+    display: flex;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    list-style: none;
+}
+nav{
+flex: 2;
+}
+
+.nav-link{
+    margin-right: 10vh;
+    color: white;
+	font-size: 14px;
+	text-decoration: none;
+    font-family: 'Roboto';
+    font-weight:100;
+	overflow: hidden;
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.nav-link:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background: white;
+	height: 1px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  }
+  .nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+	left: 0;
+	right: 0;
+  }
+#navimages{
+flex: 2;
+justify-content: flex-end;
+}
+#navimages img{
+    margin-right: 10vh;
+    transition: 0.1s ease;
+}
+#navimages img:hover{
+    transform: scale(1.2);
+}
+
+#logo{
+    margin-right: 15vh;
+    font-weight: 900;
+}
+body{
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background-image:url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    
+}
+#textwrapper{
+    margin-top: 24%;
+    width: 58%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#maintext{
+color: white;
+font-family: 'Roboto';
+text-align: center;
+}
+
+#about-us-wrapper{
+clear: left;
+margin-top: 30%;
+display: flex;
+height: 100%;
+}
+#about-us-image{
+    flex: 1;
+    background-color: #222831;
+    height: 100vh;
+    background-image: url(../images/about-us.jpg);
+    background-size: 88% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#about-us-section{
+flex: 2;
+height: 100vh;
+background-color:#222831;
+background-image: url(../images/Pfad\ 199.svg),url(../images/Pfad\ 203.svg),url(../images/Pfad\ 203.svg);
+background-repeat: no-repeat,no-repeat, no-repeat;
+background-position: 115vh 75vh,118vh 45vh, 0 -20vh ;
+background-size: 30%,15%,30%;
+
+}
+#story{
+margin-top:10%;    
+color: white;
+font-family: 'Roboto';
+text-align:center;
+
+}
+#about-us-title{
+text-align:center;
+color: white;
+font-family: 'Roboto';
+letter-spacing: 2px;
+}
+#about-us-subtitle{
+text-align:center;
+color: white;
+font-family: 'Roboto';
+font-size: 20px;
+font-weight: 550;
+
+}
+#about-us-text{
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+text-align:justify;
+line-height: 5vh;
+color: white;
+font-family: 'Roboto';
+
+}
+#team-wrapper{
+    width: 100%;
+    height:100vh;
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    perspective: 500px;
+}
+#team-text{
+grid-row: 1/7;
+text-align: center;
+}
+#team-text h1{
+font-family: 'Roboto';
+color: white;
+margin-top: 18%;
+
+}
+#team-text div{
+    width: 50%;
+    text-align:justify;
+    line-height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Roboto';
+    color: white;
+
+}
+
+#team-cards{
+grid-row: 2/6;
+display: grid;
+grid-template-columns: 5fr 1fr 5fr 1fr 5fr 2fr;
+grid-template-rows: 1fr 5fr 1fr 5fr 1fr;
+grid-template-areas:
+" . . . . . ."
+" cardone . cardtwo . cardthree ."
+" cardone . cardtwo . cardthree ."
+" cardone . cardtwo . cardthree ."
+" . . . . . ."
+
+
+
+;
+}
+#cardone{
+    grid-area: cardone;
+    background-color: #222831;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 5px;
+    transition: box-shadow 0.1s, transform 0.1s;
+
+}
+#cardone:hover {
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  }
+#cardtwo{
+    grid-area: cardtwo;
+    background-color: #222831;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 5px;
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+#cardtwo:hover {
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  }
+#cardthree{
+    grid-area: cardthree;
+    background-color: #222831;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 5px;
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+#cardthree:hover {
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  }
+#card1{
+    background-image: url(../images/forest.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    opacity: .6;
+}
+#card2{
+    background-color: #222831;
+    border-radius: 0 0 5px 5px;
+}
+#card3{
+    background-image: url(../images/mountains.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    opacity: .6;
+}
+
+#card4{
+    background-color: #222831;
+    border-radius: 0 0 5px 5px;
+}
+
+#card5{
+    background-image: url(../images/forest.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    opacity: .6;
+}
+#card6{
+    background-color: #222831;
+    border-radius: 0  0 5px 5px;
+}
+#card6 h4,#card2 h4, #card4 h4{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
+}
+#card6 p,#card2 p, #card4 p{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    font-size: 2vh;
+    margin-top: -10%;
+}
+#app-wrapper{
+    background-color:#222831;
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-columns:3fr 5fr 9fr 3fr;
+grid-template-rows:8fr 4fr 20fr 4fr 12fr 1fr ;
+grid-template-areas: 
+". . .  ."
+". mobile  . ."
+". mobile app-text ."
+". mobile .  ."
+". .  . ."
+"footer footer footer footer"
+;
+}
+#mobile-image{
+grid-area: mobile;
+}
+#mobile-image img{
+filter: drop-shadow(0px 5px 3px black);
+animation: drop 1.5s ease;
+}
+#app-section{
+margin-left: -10%;    
+grid-area: app-text;
+}
+#app-section h1{
+    color: white;
+    font-family: 'Roboto';
+}
+#app-section p{
+    color: white;
+    font-family: 'Roboto';
+    margin-top: -1%;
+}
+#app-section img{
+    margin-top: -3%;
+    margin-right:2% ;
+    filter: drop-shadow(0px 5px 3px black);
+    cursor: pointer;
+}
+#footer{
+    grid-area: footer;
+    background-color:#245A5D;
+    display: grid;
+    grid-template-columns: 1fr 100fr 50fr 14fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . . . "
+    ". footer-text . footer-images ."
+    ". . . . . "
+    ;
+}
+#footer-images{
+grid-area: footer-images;
+}
+#footer-images img{
+    margin-left: 15%;
+    cursor: pointer;
+}
+#footer-text{
+grid-area: footer-text;
+color: white;
+}
+#footer-text a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right:5%; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+.text {
+    margin-top: -8%;
+    text-align: center;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
+    font-size: 225%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+}
+
+.text li {
+  display: inline-block;
+  float: left;
+  font-size: 2em;
+  color: #fff;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  max-width: 2em;
+}
+.text.hidden li.spaced {
+  padding-left: 0;
+}
+.text li.spaced {
+  padding-left: 0.5em;
+}
+
+.text.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
