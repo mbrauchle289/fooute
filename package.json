@@ -1,0 +1,19 @@
+{
+  "name": "fooute",
+  "version": "1.0.0",
+  "description": "info-website for fooute",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrauchle289/fooute.git"
+  },
+  "author": "fbrauchle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbrauchle289/fooute/issues"
+  },
+  "homepage": "https://github.com/mbrauchle289/fooute#readme"
+}
